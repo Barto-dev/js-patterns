@@ -1,12 +1,15 @@
-// if we have an initialized instance of this object,
+// if we have an initialized this class,
 // we return it, else we create instance
 class Counter {
   constructor() {
+    // typeof class in js === object, and if we have already created this class
+    // in another module, we will get a reference to this class,
+    // else return this class
     if (typeof  Counter.instance === 'object') {
       return Counter.instance
     }
-    this.count = 0;
     Counter.instance = this;
+    this.count = 0;
     return this;
   }
 
@@ -25,6 +28,9 @@ myCount1.increaseCount()
 myCount1.increaseCount()
 myCount2.increaseCount()
 myCount2.increaseCount()
+myCount2.increaseCount()
+myCount2.increaseCount()
 
 console.log(myCount1.getCount())
 console.log(myCount2.getCount())
+
