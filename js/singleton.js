@@ -13,7 +13,7 @@ class Counter {
     return this;
   }
 
-  getCount() {
+  get countValue() {
     return this.count
   }
 
@@ -31,6 +31,6 @@ myCount2.increaseCount()
 myCount2.increaseCount()
 myCount2.increaseCount()
 
-console.log(myCount1.getCount())
-console.log(myCount2.getCount())
+console.log(myCount1.countValue)
+console.log(myCount2.countValue)
 
