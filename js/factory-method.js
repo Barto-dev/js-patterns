@@ -25,3 +25,4 @@ class Mercedes {
 const factory = new MercedesFactory();
 const s600 = factory.create('s600');
 const e220 = factory.create('e220');
+
